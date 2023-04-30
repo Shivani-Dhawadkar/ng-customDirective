@@ -1,0 +1,37 @@
+<h3 class="bg-primary text-white text-center mt-4 mb-4">ng for table </h3>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <table>
+        <div class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Sr. No.</th>
+              <th>Name</th>
+              <th>Country</th>
+              <th>Role</th>
+              <th>Age</th>
+              <th>Match played</th>
+              <th>Total Runs</th>
+              <th>Total wickets</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let tab of playerArr, let i = index ">
+                <td>{{i + 1}}</td>
+                <td>{{tab.name}}</td>
+                <td>{{tab.country}}</td>
+                <td>{{tab.role}}</td>
+                <td>{{tab.age}}</td>
+                <td>{{tab.matchesPlayed}}</td>
+                <td>{{tab.totalRuns}}</td>
+                <td>{{tab.totalWickets}}</td>
+            </tr>
+          </tbody>
+        </div>
+      </table>
+    </div>
+  </div>
+</div>
+
